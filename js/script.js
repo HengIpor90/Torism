@@ -1,11 +1,13 @@
-const GetItems = document.getElementById("get");
+document.addEventListener("DOMContentLoaded", function() {
+    const GetItems = document.getElementById("get");
 
-const items = ["Home", "About", "Services", "Contact", "Blog"];
+    const items = ["Home", "About", "Services", "Contact", "Blog"];
 
-GetItems.innerHTML = "";
-items.forEach(function(item) {
-    const listItem = document.createElement("a");
-    listItem.href = "#";
-    listItem.textContent = item;
-    GetItems.appendChild(listItem);
+    GetItems.innerHTML = "";
+    items.forEach(function(item) {
+        const listItem = document.createElement("a");
+        listItem.href = "#";
+        listItem.textContent = item;
+        GetItems.appendChild(listItem);
+    });
 });
