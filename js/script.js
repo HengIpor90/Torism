@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     const GetItems = document.getElementById("get");
-
+    const title = document.querySelector(".title");
+    
     const items = ["Home", "About", "Services", "Contact", "Blog"];
+    title.textContent = "Welcome to Torism";
 
     GetItems.innerHTML = "";
     items.forEach(function(item) {
