@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
     
     const items = ["Home", "About", "Services", "Contact", "Blog"];
     title.textContent = "Welcome to Torism";
-    this.parentElement.style.backgroundColor = "lightblue";
     para.textContent = "Explore the world with us!";
     GetItems.innerHTML = "";
     items.forEach(function(item) {
